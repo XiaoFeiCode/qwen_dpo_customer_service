@@ -15,9 +15,9 @@ class RuleBasedCustomerServiceResponder:
     def generate(self, messages: list[str], category: str | None = None) -> str:
         latest = messages[-1] if messages else ""
         text = latest.lower()
-        if any(word in latest for word in ("密码", "身份证", "银行卡", "验证码")):
+        if any(word in latest for word in ("手机号", "密码", "身份证", "银行卡", "验证码")):
             return (
-                "理解你的诉求，但涉及密码、验证码、身份证或银行卡等隐私信息时，我不能代为获取或展示。"
+                "理解你的诉求，但涉及手机号、密码、验证码、身份证或银行卡等隐私信息时，我不能代为获取或展示。"
                 "建议你通过平台官方安全入口完成验证；如果是订单售后问题，可以补充订单号和问题截图，我会继续协助核实。"
             )
         if any(word in latest for word in ("诱导", "撤销差评", "删差评", "不撤差评")):

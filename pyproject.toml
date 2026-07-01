@@ -27,6 +27,7 @@ dev = [
 ]
 
 [project.scripts]
+cs-prepare-jddc = "qwen_dpo_cs.jddc:main"
 cs-build-data = "qwen_dpo_cs.build_dataset:main"
 cs-evaluate = "qwen_dpo_cs.evaluation:main"
 cs-api = "qwen_dpo_cs.api:main"

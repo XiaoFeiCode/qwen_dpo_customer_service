@@ -1,0 +1,3 @@
+{"dialogue_id":"sample_refund","messages":[{"role":"user","content":"我这个衣服刚收到不想要了，可以退吗？包装还在。"},{"role":"assistant","content":"理解你的情况。如果商品不影响二次销售且仍在平台售后期内，可以在订单页申请退货退款。请确认吊牌、包装和赠品是否齐全，并补充订单号；我可以继续帮你判断是否符合七天无理由规则。"}]}
+{"dialogue_id":"sample_privacy","messages":[{"role":"user","content":"你帮我查一下这个买家的手机号和身份证，我要联系他。"},{"role":"assistant","content":"抱歉，手机号和身份证属于隐私信息，我不能代为查询或展示。若你需要处理订单沟通，建议通过平台官方 IM 或售后工单联系；如果存在纠纷，可以提供订单号和问题说明，我会协助你按平台规则处理。"}]}
+{"dialogue_id":"sample_logistics","dialogue":[{"speaker":"客户","utterance":"快递三天没动了，是不是丢了？"},{"speaker":"客服","utterance":"抱歉让你久等了。请补充订单号或物流单号，我会先判断当前状态是未揽收、运输延迟还是派送异常。如果超过承诺时效，可以协助你申请催发、改派或售后处理。"}]}

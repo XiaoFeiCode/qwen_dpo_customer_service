@@ -1,9 +1,11 @@
 model:
-  base_model: Qwen/Qwen2.5-0.5B-Instruct
+  base_model: Qwen/Qwen3-8B
   trust_remote_code: true
 
 data:
-  raw_file: data/raw/customer_service_seed.jsonl
+  raw_file: data/jddc/raw
+  normalized_file: data/processed/jddc_normalized.jsonl
+  preference_file: data/processed/preference_pairs.jsonl
   sft_file: data/processed/sft_train.jsonl
   dpo_file: data/processed/dpo_train.jsonl
   eval_file: data/processed/eval.jsonl
@@ -30,3 +32,12 @@ lora:
   r: 16
   alpha: 32
   dropout: 0.05
+
+preference_construction:
+  max_dialogues: 50000
+  min_response_chars: 12
+  strategies:
+    - terse
+    - overpromise
+    - privacy_leak
+    - vague

@@ -82,7 +82,7 @@ def write_report(path: Path, records: list[dict[str, Any]]) -> None:
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Build SFT/DPO/eval datasets from raw JSONL.")
-    parser.add_argument("--input", default="data/raw/customer_service_seed.jsonl")
+    parser.add_argument("--input", default="data/processed/preference_pairs.jsonl")
     parser.add_argument("--out-dir", default="data/processed")
     return parser.parse_args()
 

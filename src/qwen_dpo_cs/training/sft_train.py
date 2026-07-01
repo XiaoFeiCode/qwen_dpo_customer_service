@@ -5,7 +5,7 @@ import argparse
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Run LoRA SFT on customer service data.")
-    parser.add_argument("--model-name", default="Qwen/Qwen2.5-0.5B-Instruct")
+    parser.add_argument("--model-name", default="Qwen/Qwen3-8B")
     parser.add_argument("--train-file", default="data/processed/sft_train.jsonl")
     parser.add_argument("--output-dir", default="checkpoints/sft-lora")
     parser.add_argument("--max-length", type=int, default=1024)
